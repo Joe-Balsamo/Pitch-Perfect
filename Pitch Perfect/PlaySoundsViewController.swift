@@ -31,12 +31,7 @@ class PlaySoundsViewController: UIViewController {
         } catch {
             print("couldn't load file :(")
         }
-        
-//        do {
-//            try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.Speaker)
-//        } catch _ {
-//        }
-        
+                
         audioEngine = AVAudioEngine()
         audioFile = try! AVAudioFile(forReading: receivedAudio.filePathUrl)
     }
