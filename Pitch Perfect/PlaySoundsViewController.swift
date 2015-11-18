@@ -61,7 +61,7 @@ class PlaySoundsViewController: UIViewController {
     @IBAction func playEchoAudio(sender: UIButton) {
         resetAndStop()
         audioPlayer.currentTime = 0.0
-        audioPlayerEcho.currentTime = 0.2
+        audioPlayerEcho.currentTime = 0.15
         audioPlayer.play()
         audioPlayerEcho.play()
     }
